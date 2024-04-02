@@ -1,0 +1,67 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/main.js"></script>
+<img src="Pics/Left.png" alt="Back" width="50" height="50" onclick="back()">
+<img src="Pics/T.png" width="50" height="50" onclick="lol()">
+<input style="display: inline-block;" onchange="changevol()" oninput="slider()" id="slider" type="range" min="0" max="100 " value="0">
+<p style="display: inline-block;" id="vol">0</p>
+
+<img  src="Pics/Airpod.png" onclick="airpod()" height="50" width="50">
+
+<style>
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #E63632;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: blue;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #E63632;
+}
+</style>
+
+<br>
+
+<!--<button onclick="up()" id="up">Up</button>
+<br>
+<button onclick="left()">Left</button>
+<button onclick="ok()">Ok</button>
+<button onclick="right()">Right</button>
+<br>
+<button onclick="down()" id="down">Down</button>
+-->
+<br>
+
+<div style="width: 50px; height: 50px; display:inline-block"></div> 
+<img src="Pics/Up.png" onclick="up()" id="up" height="50" width="50">
+
+<br>
+<img src="Pics/Left.png" onclick="left()" id="left" height="50" width="50">
+<img src="Pics/Ok.png" onclick="ok()" id="ok" height="50" width="50">
+<img src="Pics/Right.png" onclick="right()" id="right" height="50" width="50">
+<br><div style="width: 50px; height: 50px; display:inline-block"></div> 
+<img src="Pics/Down.png" onclick="down()" id="down" height="50" width="50">
+<br>
+<img width="50px" height="50px" src="Pics/Netflix.png" onclick="netflix()">
+<img style="display: inline-block;" width="50px" height="50px" src="Pics/prime.png" onclick="runapp('amazon')">
+<!--<button id="iwannadie">hold me</button>
+<p id="counter">0</p>--> 
