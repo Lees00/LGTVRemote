@@ -108,22 +108,19 @@ async function button(mes, vari){
             case 'Netflix':
                 
                 await tv.launchApp(Apps.netflix)
-                await sleep(1000)
+                await sleep(10000)
                 await tv.sendKey(Keys.ok)
-                await sleep(200)
-                await tv.sendKey(Keys.arrowRight)
-                await tv.sendKey(Keys.arrowDown)
-                await tv.sendKey(Keys.ok)
-                await tv.sendKey(Keys.arrowDown)
-                await  tv.sendKey(Keys.ok)
-                await tv.sendKey(Keys.arrowUp)
+                await tv.sendKey(Keys.number5)
                 await sleep(100)
-                await tv.sendKey(Keys.arrowUp)
-                await tv.sendKey(Keys.ok)
-                await tv.sendKey(Keys.arrowDown)
-                await tv.sendKey(Keys.ok)
-                await sleep(1000)
-                await tv.sendKey(Keys.ok)
+                await tv.sendKey(Keys.number8)
+                await sleep(100)
+                await tv.sendKey(Keys.number2)
+                await sleep(100)
+                await tv.sendKey(Keys.number5)
+                
+
+
+
                 break;
             
 
