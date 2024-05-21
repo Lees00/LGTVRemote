@@ -103,7 +103,7 @@ async function button(mes, vari){
         try{
          switch(mes){
             case 'FUCK YOU':
-                await tv.launchApp(Apps.browser)
+                await tv.launchApp(Apps.settings)
                 break;
             case 'Netflix':
                 
